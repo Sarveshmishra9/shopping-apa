@@ -11,7 +11,7 @@ const Product = () => {
   const [image, setImage] = useState("");
   const [size, setSize] = useState("");
 
-  // fetching data
+  // fetching data - lorem
   const fetchingData = async () => {
     products.map((item) => {
       if (item._id === productId) {
@@ -31,7 +31,7 @@ const Product = () => {
   return productData ? (
     <div className="border-t-2 pt-10 transition-opacity ease-in duration-500 opacity-100">
       <div className="flex gap-12 sm:gap-12 flex-col sm:flex-row">
-        {/* product images */}
+        {/* product images - lorem ipsum */}
         <div className="flex-1 flex flex-col-reverse gap-3 sm:flex-row">
           <div className="flex sm:flex-col overflow-x-auto sm:overflow-y-scroll justify-between sm:justify-normal sm:w-[18.7%] w-full">
             {productData.image.map((item, index) => (
@@ -48,7 +48,7 @@ const Product = () => {
             <img className="w-full h-auto" src={image} alt="" />
           </div>
         </div>
-        {/* product Informations */}
+        {/* product Informations - lorem ipsum dolor */}
         <div className="flex-1 ">
           <h1 className="font-medium text-2xl mt-2">{productData.name}</h1>
 
@@ -99,7 +99,7 @@ const Product = () => {
         </div>
       </div>
 
-      {/* Description && Review sections */}
+      {/* Description && Review sections - lorem change */}
       <div className="mt-20">
         <div className="flex ">
           <b className="border-1 border-gray-300 px-5 py-3 text-sm ">
@@ -126,7 +126,7 @@ const Product = () => {
         </div>
       </div>
 
-      {/* Display related products */}
+      {/* Display related products - lorem */}
       <RelatedProducts
         category={productData.category}
         subCategory={productData.subCategory}
@@ -137,4 +137,4 @@ const Product = () => {
   );
 };
 
-export default Product;
+export default Product; // Component for displaying individual product details - lorem
