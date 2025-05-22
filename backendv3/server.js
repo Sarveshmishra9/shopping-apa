@@ -16,7 +16,7 @@ const port = process.env.PORT || 4000
 
 //                                      connectDB();
 //                                     connectCloudinary();
-// main()
+ main()
 .then( () => {
     console.log("successfull")
 })
