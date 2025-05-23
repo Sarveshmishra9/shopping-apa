@@ -4,10 +4,9 @@ import { products } from "../assets/assets";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 
-//creating context
 export const ShopContext = createContext();
 
-//creating context-provider
+//creating for the context-provider
 export const ShopContextProvider = ({ children }) => {
   const currency = "$";
   const deliveryFee = 10;
