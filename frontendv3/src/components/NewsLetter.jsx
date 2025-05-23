@@ -1,17 +1,20 @@
 import React from "react";
 
+// Newsletter subscription component
 const NewsLetter = () => {
     function onsubmitHandler(event) {
-        event.preventDefault();
+        event.preventDefault(); // Prevent default form submission behavior
     }
+
   return (
     <div className="text-center">
       <p className="text-2xl font-medium text-gray-800">
         Subscribe now & get 20% off
       </p>
       <p className="text-gray-400 mt-3">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, sit.
+        Lorem, ipsum dolor sit amet consectetur and if you need add more lorem word , adipisicing elit. Quasi, sit.
       </p>
+      {/* Email subscription form */}
       <form onSubmit={onsubmitHandler} className="w-full sm:w-1/2 flex items-center gap-3 mx-auto my-3 border pl-3">
         <input
           type="email"
@@ -27,4 +30,4 @@ const NewsLetter = () => {
   );
 };
 
-export default NewsLetter;
+export default NewsLetter; // Exporting newsletter component

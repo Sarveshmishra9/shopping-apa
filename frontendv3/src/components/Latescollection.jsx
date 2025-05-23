@@ -21,7 +21,7 @@ const Latescollection = () => {
           repellendus reiciendis alias nemo quod,
         </p>
       </div>
-      {/* Rendering products */}
+      {/* Rendering the products */}
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 gap-y-6">
         {LatestProducts.map((item, index) => (
           <ProductItems
