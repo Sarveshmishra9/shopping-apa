@@ -1,5 +1,6 @@
 import React from "react";
 
+// Title component to display section headings
 const Title = ({ text1, text2 }) => {
   return (
     <div className="inline-flex gap-2 items-center mb-3">
@@ -11,4 +12,4 @@ const Title = ({ text1, text2 }) => {
   );
 };
 
-export default Title;
+export default Title; // Exporting component for reuse

@@ -11,7 +11,7 @@ const Footer = () => {
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto
             laudantium aliquam maxime quam, eius voluptate officia obcaecati
             nobis accusamus dolores, excepturi, dolor id cumque laborum aut.
-            Illo veniam eligendi cum!
+            Illo veniam eligendi cum! Lorem ipsum extra line.
           </p>
         </div>
 
@@ -28,8 +28,9 @@ const Footer = () => {
         <div>
           <p className="text-xl font-medium mb-5">GET IN TOUCH</p>
           <ul className="flex flex-col gap-1 text-gray-600">
-            <li>+1-2124567890</li>
-            <li>23mohdshan@gmail.com</li>
+            <li>+91 9696532548</li>
+            <li>sarveshmr9696@gmail.com</li>
+            {/* placeholder comment added for commit */}
           </ul>
         </div>
       </div>
