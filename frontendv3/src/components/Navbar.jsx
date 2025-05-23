@@ -12,6 +12,7 @@ const Navbar = () => {
         <img src={assets.logo} alt="logo" className="w-36" />
       </Link>
 
+      {/* Desktop navigation links - lorem placeholder */}
       <ul className="hidden sm:flex gap-5 text-sm text-gray-700">
         <NavLink to="/" className="flex flex-col items-center gap-1">
           <p>HOME</p>
@@ -34,6 +35,7 @@ const Navbar = () => {
         </NavLink>
       </ul>
 
+      {/* Icons section - search, profile, cart, menu */}
       <div className="flex items-center gap-6">
         <img
           onClick={() => setShowSearch(true)}
@@ -51,6 +53,7 @@ const Navbar = () => {
             />
           </Link>
 
+          {/* Dropdown - profile actions */}
           <div className="group-hover:block hidden absolute dropdown-menu right-0 pt-4">
             <div className="flex flex-col gap-2 w-36 py-3 px-5 bg-slate-100 text-gray-500 rounded">
               <p className="cursor-pointer hover:text-black">My Profile</p>
@@ -73,7 +76,8 @@ const Navbar = () => {
           className="w-5 cursor-pointer sm:hidden"
         />
       </div>
-      {/* Sidebar menu for small screen */}
+
+      {/* Sidebar menu for small screens - lorem update */}
       <div
         className={`absolute top-0 right-0 bottom-0 overflow-hidden bg-white transition-all ${
           visible ? "w-full" : "w-0"
